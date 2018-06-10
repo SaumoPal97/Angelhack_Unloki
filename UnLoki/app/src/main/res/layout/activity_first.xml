@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your location"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24dp"
+        android:background="#4256F4"/>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="Location"
+        android:text="MBRDI GGA"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="32dp"
+        android:background="@drawable/gga"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <Button
+    android:id="@+id/button2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="Location"
+        android:textAllCaps="false"
+    android:text="MBRDI WP"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/wp"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/button3"
+    android:text="Hotel PMR"
+        android:textAllCaps="false"
+    android:onClick="Location"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/pmr"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/button"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:textSize="32dp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Add new location"
+        android:onClick="Location" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

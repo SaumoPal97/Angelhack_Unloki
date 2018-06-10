@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the gate to unlock"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24dp"
+        android:background="#4256F4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="Gate"
+                android:text="Front Gate"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="32dp"
+                android:background="#F44E42"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="Gate"
+                android:text="2nd Floor Conference Room"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="32dp"
+
+                android:fontFamily="sans-serif-condensed"
+                android:background="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button3"
+                android:text="Cafeteria"
+                android:onClick="Gate"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="32dp"
+
+                android:fontFamily="sans-serif-condensed"
+                android:background="#F44E42"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:textSize="32dp"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Add new entry point"
+                android:onClick="Gate" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
