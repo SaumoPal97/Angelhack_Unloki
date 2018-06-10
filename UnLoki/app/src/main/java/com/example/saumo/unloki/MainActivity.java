@@ -17,12 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
         textView = (TextView) findViewById(R.id.text);
-
-    }
-
-    BluetoothAdapter mBtAdapter = BluetoothAdapter.getDefaultAdapter();
-    if(!mBtAdapter.isEnabled()){
-        mBtAdapter.enable();
+        BluetoothAdapter BA = BluetoothAdapter.getDefaultAdapter();
+        if(!BA.isEnabled()) {
+            BA.enable();
+        }
     }
 
     public void Location(View View)
